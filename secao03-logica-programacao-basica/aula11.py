@@ -2,8 +2,8 @@
 # Entrada de dados pelo usuário
 
 
-# nome = input('Qual é o seu nome? ') # A função input() sempre retorna uma string
-# print(f'Olá, {nome}')
+nome = input('Qual é o seu nome? ') # A função input() sempre retorna uma string
+print(f'Olá, {nome}')
 
 
 x = input('Digite um número: ')
