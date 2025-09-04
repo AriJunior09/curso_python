@@ -21,6 +21,8 @@ if idade < maior_idade:
     print('É menor de idade')
 elif idade == maior_idade:
     print('Acabou de se tornar maior de idade')
+elif idade:
+    pass
 else:
     print('É maior de idade')
 
@@ -47,3 +49,19 @@ else:
         else:
             print('Ainda não é idoso')
 # Fim
+
+condicao1 = False
+condicao2 = False
+condicao3 = True
+condicao4 = True
+
+if condicao1:
+    print('Condição 1 é verdadeira')
+elif condicao2:
+    print('Condição 2 é verdadeira')
+elif condicao3:
+    print('Condição 3 é verdadeira')
+elif condicao4:
+    print('Essa condição não será executada, pois a condição 3 já é verdadeira')
+else:
+    print('Nenhuma condição é verdadeira')
