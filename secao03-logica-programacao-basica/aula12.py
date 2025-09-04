@@ -65,3 +65,5 @@ elif condicao4:
     print('Essa condição não será executada, pois a condição 3 já é verdadeira')
 else:
     print('Nenhuma condição é verdadeira')
+
+print('Fim do programa')
