@@ -2,17 +2,20 @@
 Caso o usuário não tenha digitado um número inteiro, informe que não é um número inteiro.
 """
 
-
-
 # Peça ao usuário para digitar um número inteiro
 numero = input('Digite um número inteiro: ')
 
-#Informe se esse número é par ou impar
+#Verifique se foi digitado apenas numeros inteiros e Informe se esse número é par ou impar
 try:
-    numero_int = int(numero)
-    if numero_int % 2 == 0 and type(numero_int) == int:
-        print('Esse número é par!')
-    else:
-        print('Esse número é impar')
+    if numero.isdigit():
+        numero_int = int(numero)
+        par_impar = numero_int % 2 == 0
+        par_impar_texto = 'impar'
+        
+    if par_impar:
+        par_impar_texto = 'par'
+        
+    print(f'O número {numero_int} é {par_impar_texto}')
+    
 except:
-    print('Isso não é um número inteiro!')
+    print('Você não digitou um número inteiro!')
