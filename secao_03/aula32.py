@@ -20,7 +20,6 @@ while contador <= 20:
         break
 
     print(contador)
-    
 
 print('-' * 10,'FIM','-' * 10)
 
