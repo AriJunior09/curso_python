@@ -12,4 +12,7 @@ while condicao:
     nome = input('Qual o seu nome: ')
     print(f'Seu nome é {nome}')
 
+    if nome == 'sair':
+        break       # O break encerra o while mais proximo dele
+
 print('Fim')
