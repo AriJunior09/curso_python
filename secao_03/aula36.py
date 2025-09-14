@@ -6,8 +6,8 @@ while True:
     segundo_numero = input('Digite o segundo numero: ')
 
     try:
-        n1 = int(primeiro_numero)
-        n2= int(segundo_numero)
+        n1 = float(primeiro_numero)
+        n2= float(segundo_numero)
 
         if primeiro_numero.isdigit():
             if segundo_numero.isdigit():
