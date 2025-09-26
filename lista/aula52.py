@@ -33,9 +33,13 @@ while True:
 
         elif opcao in 'lL':
             os.system('cls')
+
+            if len(lista) == 0:
+                print('Nada para listar!')
+
             print('-' * 18)
-            for i in lista:
-                print(lista.index(i), i.capitalize())
+            for i, valor in enumerate(lista):
+                print(i, valor.capitalize())
             print('-' * 18)
 
         elif opcao in 'sS':
