@@ -24,7 +24,11 @@ contrario disso:
 Nesse caso o SEGUNDO dígito do CPF é 0
 
 """
-cpf = '74682489070'
+cpf = '746.824.890-70'\
+    .replace('.', '') \
+    .replace(' ', '') \
+    .replace('-', '')
+
 nove_digitos = cpf[:9]
 contador_regressivo_1 = 10
 resultado_dig_1 = 0
