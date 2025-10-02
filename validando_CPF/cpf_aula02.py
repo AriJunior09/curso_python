@@ -24,10 +24,19 @@ contrario disso:
 Nesse caso o SEGUNDO dígito do CPF é 0
 
 """
-cpf = '746.824.890-70'\
-    .replace('.', '') \
-    .replace(' ', '') \
-    .replace('-', '')
+import re
+entrada = input('Digite seu CPF: ')
+
+cpf = re.sub(
+    r'[^0-9]',
+    '',
+    entrada
+)
+
+entrada_eh_sequencial = entrada == entrada[0] * len(entrada)
+if entrada_eh_sequencial:
+    print('Você enviou dados sequenciais')
+    exit()
 
 nove_digitos = cpf[:9]
 contador_regressivo_1 = 10
