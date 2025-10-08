@@ -1,10 +1,9 @@
 def par_impar(numero):
     if numero % 2 == 0:
-        print('É par')
-    else:
-        print('É ímpar')
+        return f'{numero} é par'
+    return f'{numero} é ímpar'
 
 
 numero = int(input('Digite um número: '))
 
-par_impar(numero)
+print(par_impar(numero))
