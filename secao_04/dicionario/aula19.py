@@ -13,3 +13,13 @@ clear - Remove todos os itens do dicionário.
 update - Atualiza o dicionário com os pares chave-valor de outro dicionário ou de um iterável de pares chave-valor.
 """
 
+pessoa = {
+    'nome': 'Ari',
+    'sobrenome': 'Junior',
+    'idade': 33
+}
+
+
+print(len(pessoa))  # Retorna o número de itens (pares chave-valor) no dicionário.
+
+print(pessoa.keys())    # Retorna uma visão (view) das chaves no dicionário.
