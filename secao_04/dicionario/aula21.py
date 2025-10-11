@@ -38,7 +38,7 @@ update - Atualiza o dicionário com os pares chave-valor de outro dicionário ou
 #     print(f'{chave}: {valor}')
 
 '''-------------------------------------------------------------'''
-
+# Atualizando com uma lista de listas
 lista = [ ['nome', 'Rafael'], ['sobrenome', 'Silva'], ['idade', 55] ]
 pessoa.update(lista) # Atualiza o dicionário com uma lista de listas
 print(pessoa) # {'nome': 'Rafael', 'sobrenome': 'Silva', 'idade': 55}
